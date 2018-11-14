@@ -1,0 +1,6 @@
+router#tcl
+router-tcl# conf t
+router(config-tcl)# interface loopback 10
+router(config-if-tcl)#description loop10
+router(config-if-tcl)# tclquite
+router#
