@@ -1,0 +1,309 @@
+ftp/ssh
+To list the users? 
+cat /etc/passwd
+To list the user names? a
+wk-F':' '{print$1}' /etc.passwd
+su vs. sudo -i
+How to check memory storage? f
+ree, free --m, cat /proc/meminfo , vmstat -s, 
+
+df
+
+Memory and CPU usage per proces? 
+top vs htop
+
+More RAM info?
+dmidecode, dmidecode -t, dmidecode -t 17
+
+How to check the system  messages?:
+ls /var
+cat /var/log/mesages | more
+
+Nov 27 00:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 00:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 00:01:01 CentOS7Server systemd: Started Session 992 of user root.
+Nov 27 00:01:01 CentOS7Server systemd: Starting Session 992 of user root.
+Nov 27 00:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 00:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 01:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 01:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 01:01:01 CentOS7Server systemd: Started Session 993 of user root.
+Nov 27 01:01:01 CentOS7Server systemd: Starting Session 993 of user root.
+Nov 27 01:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 01:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 02:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 02:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 02:01:01 CentOS7Server systemd: Started Session 994 of user root.
+Nov 27 02:01:01 CentOS7Server systemd: Starting Session 994 of user root.
+Nov 27 02:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 02:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 03:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 03:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 03:01:01 CentOS7Server systemd: Started Session 995 of user root.
+Nov 27 03:01:01 CentOS7Server systemd: Starting Session 995 of user root.
+Nov 27 04:01:01 CentOS7Server systemd: Started Session 996 of user root.
+Nov 27 04:01:01 CentOS7Server systemd: Starting Session 996 of user root.
+Nov 27 04:06:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 04:06:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 05:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 05:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 05:01:01 CentOS7Server systemd: Started Session 997 of user root.
+Nov 27 05:01:01 CentOS7Server systemd: Starting Session 997 of user root.
+Nov 27 05:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 05:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 06:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 06:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 06:01:01 CentOS7Server systemd: Started Session 998 of user root.
+Nov 27 06:01:01 CentOS7Server systemd: Starting Session 998 of user root.
+Nov 27 06:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 06:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 07:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 07:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 07:01:01 CentOS7Server systemd: Started Session 999 of user root.
+Nov 27 07:01:01 CentOS7Server systemd: Starting Session 999 of user root.
+Nov 27 07:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 07:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 08:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 08:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 08:01:01 CentOS7Server systemd: Started Session 1000 of user root.
+Nov 27 08:01:01 CentOS7Server systemd: Starting Session 1000 of user root.
+Nov 27 08:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 08:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 09:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 09:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 09:01:01 CentOS7Server systemd: Started Session 1001 of user root.
+Nov 27 09:01:01 CentOS7Server systemd: Starting Session 1001 of user root.
+Nov 27 09:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 09:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 10:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 10:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 10:01:01 CentOS7Server systemd: Started Session 1002 of user root.
+Nov 27 10:01:01 CentOS7Server systemd: Starting Session 1002 of user root.
+Nov 27 10:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 10:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 11:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 11:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 11:01:01 CentOS7Server systemd: Started Session 1003 of user root.
+Nov 27 11:01:01 CentOS7Server systemd: Starting Session 1003 of user root.
+Nov 27 11:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 11:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 12:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 12:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 12:01:01 CentOS7Server systemd: Started Session 1004 of user root.
+Nov 27 12:01:01 CentOS7Server systemd: Starting Session 1004 of user root.
+Nov 27 12:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 12:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 13:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 13:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 13:01:01 CentOS7Server systemd: Started Session 1005 of user root.
+Nov 27 13:01:01 CentOS7Server systemd: Starting Session 1005 of user root.
+Nov 27 13:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 13:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 14:01:02 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 14:01:02 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 14:01:02 CentOS7Server systemd: Started Session 1006 of user root.
+Nov 27 14:01:02 CentOS7Server systemd: Starting Session 1006 of user root.
+Nov 27 14:01:02 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 14:01:02 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 15:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 15:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 15:01:01 CentOS7Server systemd: Started Session 1007 of user root.
+Nov 27 15:01:01 CentOS7Server systemd: Starting Session 1007 of user root.
+Nov 27 15:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 15:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 16:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 16:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 16:01:01 CentOS7Server systemd: Started Session 1008 of user root.
+Nov 27 16:01:01 CentOS7Server systemd: Starting Session 1008 of user root.
+Nov 27 16:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 16:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 17:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 17:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 17:01:01 CentOS7Server systemd: Started Session 1009 of user root.
+Nov 27 17:01:01 CentOS7Server systemd: Starting Session 1009 of user root.
+Nov 27 17:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 17:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 18:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 18:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 18:01:01 CentOS7Server systemd: Started Session 1010 of user root.
+Nov 27 18:01:01 CentOS7Server systemd: Starting Session 1010 of user root.
+Nov 27 18:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 18:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 19:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 19:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 19:01:01 CentOS7Server systemd: Started Session 1011 of user root.
+Nov 27 19:01:01 CentOS7Server systemd: Starting Session 1011 of user root.
+Nov 27 19:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 19:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 20:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 20:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 20:01:01 CentOS7Server systemd: Started Session 1012 of user root.
+Nov 27 20:01:01 CentOS7Server systemd: Starting Session 1012 of user root.
+Nov 27 20:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 20:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 21:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 21:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 21:01:01 CentOS7Server systemd: Started Session 1013 of user root.
+Nov 27 21:01:01 CentOS7Server systemd: Starting Session 1013 of user root.
+Nov 27 21:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 21:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 22:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 22:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 22:01:01 CentOS7Server systemd: Started Session 1014 of user root.
+Nov 27 22:01:01 CentOS7Server systemd: Starting Session 1014 of user root.
+Nov 27 22:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 22:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 23:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 27 23:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 27 23:01:01 CentOS7Server systemd: Started Session 1015 of user root.
+Nov 27 23:01:01 CentOS7Server systemd: Starting Session 1015 of user root.
+Nov 27 23:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 27 23:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 27 23:44:36 CentOS7Server systemd: Starting Cleanup of Temporary Directories...
+Nov 27 23:44:36 CentOS7Server systemd: Started Cleanup of Temporary Directories.
+Nov 28 00:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 00:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 00:01:01 CentOS7Server systemd: Started Session 1016 of user root.
+Nov 28 00:01:01 CentOS7Server systemd: Starting Session 1016 of user root.
+Nov 28 00:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 00:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 01:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 01:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 01:01:01 CentOS7Server systemd: Started Session 1017 of user root.
+Nov 28 01:01:01 CentOS7Server systemd: Starting Session 1017 of user root.
+Nov 28 01:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 01:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 02:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 02:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 02:01:01 CentOS7Server systemd: Started Session 1018 of user root.
+Nov 28 02:01:01 CentOS7Server systemd: Starting Session 1018 of user root.
+Nov 28 02:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 02:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 03:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 03:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 03:01:01 CentOS7Server systemd: Started Session 1019 of user root.
+Nov 28 03:01:01 CentOS7Server systemd: Starting Session 1019 of user root.
+Nov 28 03:25:02 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 03:25:02 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 04:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 04:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 04:01:01 CentOS7Server systemd: Started Session 1020 of user root.
+Nov 28 04:01:01 CentOS7Server systemd: Starting Session 1020 of user root.
+Nov 28 04:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 04:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 05:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 05:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 05:01:01 CentOS7Server systemd: Started Session 1021 of user root.
+Nov 28 05:01:01 CentOS7Server systemd: Starting Session 1021 of user root.
+Nov 28 05:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 05:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 06:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 06:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 06:01:01 CentOS7Server systemd: Started Session 1022 of user root.
+Nov 28 06:01:01 CentOS7Server systemd: Starting Session 1022 of user root.
+Nov 28 06:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 06:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 07:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 07:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 07:01:01 CentOS7Server systemd: Started Session 1023 of user root.
+Nov 28 07:01:01 CentOS7Server systemd: Starting Session 1023 of user root.
+Nov 28 07:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 07:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 08:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 08:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 08:01:01 CentOS7Server systemd: Started Session 1024 of user root.
+Nov 28 08:01:01 CentOS7Server systemd: Starting Session 1024 of user root.
+Nov 28 08:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 08:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 09:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 09:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 09:01:01 CentOS7Server systemd: Started Session 1025 of user root.
+Nov 28 09:01:01 CentOS7Server systemd: Starting Session 1025 of user root.
+Nov 28 09:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 09:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 10:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 10:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 10:01:01 CentOS7Server systemd: Started Session 1026 of user root.
+Nov 28 10:01:01 CentOS7Server systemd: Starting Session 1026 of user root.
+Nov 28 10:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 10:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 11:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 11:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 11:01:01 CentOS7Server systemd: Started Session 1027 of user root.
+Nov 28 11:01:01 CentOS7Server systemd: Starting Session 1027 of user root.
+Nov 28 11:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 11:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 12:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 12:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 12:01:01 CentOS7Server systemd: Started Session 1028 of user root.
+Nov 28 12:01:01 CentOS7Server systemd: Starting Session 1028 of user root.
+Nov 28 12:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 12:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 13:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 13:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 13:01:01 CentOS7Server systemd: Started Session 1029 of user root.
+Nov 28 13:01:01 CentOS7Server systemd: Starting Session 1029 of user root.
+Nov 28 13:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 13:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 14:01:02 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 14:01:02 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 14:01:02 CentOS7Server systemd: Started Session 1030 of user root.
+Nov 28 14:01:02 CentOS7Server systemd: Starting Session 1030 of user root.
+Nov 28 14:01:02 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 14:01:02 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 15:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 15:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 15:01:01 CentOS7Server systemd: Started Session 1031 of user root.
+Nov 28 15:01:01 CentOS7Server systemd: Starting Session 1031 of user root.
+Nov 28 15:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 15:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 16:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 16:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 16:01:01 CentOS7Server systemd: Started Session 1032 of user root.
+Nov 28 16:01:01 CentOS7Server systemd: Starting Session 1032 of user root.
+Nov 28 16:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 16:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 17:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 17:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 17:01:01 CentOS7Server systemd: Started Session 1033 of user root.
+Nov 28 17:01:01 CentOS7Server systemd: Starting Session 1033 of user root.
+Nov 28 17:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 17:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 18:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 18:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 18:01:01 CentOS7Server systemd: Started Session 1034 of user root.
+Nov 28 18:01:01 CentOS7Server systemd: Starting Session 1034 of user root.
+Nov 28 18:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 18:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 19:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 19:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 19:01:01 CentOS7Server systemd: Started Session 1035 of user root.
+Nov 28 19:01:01 CentOS7Server systemd: Starting Session 1035 of user root.
+Nov 28 19:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 19:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 20:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 20:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 20:01:01 CentOS7Server systemd: Started Session 1036 of user root.
+Nov 28 20:01:01 CentOS7Server systemd: Starting Session 1036 of user root.
+Nov 28 20:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 20:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 21:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 21:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 21:01:01 CentOS7Server systemd: Started Session 1037 of user root.
+Nov 28 21:01:01 CentOS7Server systemd: Starting Session 1037 of user root.
+Nov 28 21:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 21:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 22:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 22:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 22:01:01 CentOS7Server systemd: Started Session 1038 of user root.
+Nov 28 22:01:01 CentOS7Server systemd: Starting Session 1038 of user root.
+Nov 28 22:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 22:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 23:01:01 CentOS7Server systemd: Created slice User Slice of root.
+Nov 28 23:01:01 CentOS7Server systemd: Starting User Slice of root.
+Nov 28 23:01:01 CentOS7Server systemd: Started Session 1039 of user root.
+Nov 28 23:01:01 CentOS7Server systemd: Starting Session 1039 of user root.
+Nov 28 23:01:01 CentOS7Server systemd: Removed slice User Slice of root.
+Nov 28 23:01:01 CentOS7Server systemd: Stopping User Slice of root.
+Nov 28 23:45:36 CentOS7Server systemd: Starting Cleanup of Temporary Directories...
+Nov 28 23:45:36 CentOS7Server systemd: Started Cleanup of Temporary Directories.
