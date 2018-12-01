@@ -1,0 +1,3 @@
+To see runing, stopped or uknown services in Ubuntu ?
+
+sudo service --status-all OR service --status-all
