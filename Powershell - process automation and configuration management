@@ -1,5 +1,6 @@
 ipcofig -a
 Get-Process | Out_Gridview
+get-process
 netsh advfirewall export "firewall.txt" //to list the status of the firewall
 
 how to direct the output to a file ? - use the ">" comand
