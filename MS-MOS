@@ -1,0 +1,13 @@
+cd %USERPROFILE%
+cd =dir
+copy =cp
+del = rm
+deltree = rm -r
+edit = ci, emacs, etc
+exit
+find = grep
+help = man
+ipcofig/all = ifconfig -a
+mkdir = mkdir
+move = mv
+ver = uname -a
