@@ -1,0 +1,16 @@
+How to view the processes ? 
+
+ps, top and htop
+
+
+Top and ps get their info from       /proc/PID    or   /prov/PID/task/ThreardID 
+Top -H -p PID
+ps -e -T | grep APPLICATION NAME OR PID
+
+ps -e -T | grep zoom.us
+ps -M 
+help 
+
+ps -eLF | gerp PID     in linux
+
+sudo dtruss28430
